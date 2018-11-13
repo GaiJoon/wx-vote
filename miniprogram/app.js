@@ -10,6 +10,9 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData
+  },
+  globalData:{
+    domain: 'http://vote.test/api',
   }
 })

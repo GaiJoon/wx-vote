@@ -1,0 +1,73 @@
+.us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.us-image {
+  width: 756rpx;
+  height: 524rpx;
+}
+
+.us-name {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 0.17px;
+  margin-top: 24rpx;
+  margin-left: 32rpx;
+}
+
+.us-introduce {
+  margin-top: 10rpx;
+  margin-left: 32rpx;
+}
+
+.us-introduce {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: -0.29px;
+}
+
+.us-auth {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0.17px;
+}
+
+.us-auth-content {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: -0.29px;
+  margin-left: 5rpx;
+}
+
+.us-phone {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0.14px;
+}
+
+.us-phone-content {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  letter-spacing: -0.29px;
+}
+
+.us-phone-log {
+  width: 36rpx;
+  height: 32rpx;
+  margin-left: 20rpx;
+}
+
+.us-group {
+  margin-left: 32rpx;
+}
+
+.us-group-one {
+  margin-left: 32rpx;
+}

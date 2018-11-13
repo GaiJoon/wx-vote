@@ -1,0 +1,19 @@
+<view class='vote-total'>
+<block wx:for="{{entities}}" wx:for-index="id" >
+  <view class='vote-content' bindtap="Detail" data-group='{{item.group_id}}' data-id='{{item.id}}'>
+    <image class='vote-image' src='{{item.cover}}'></image>
+    <view class='vote-th'>
+      <text class='vote-title'>{{item.title}}</text>
+      <image class="vote-huohua" wx:if="{{id <= 3}}" src='/images/fire.svg'></image>
+    </view>
+    <view class='vote-sum'>
+      <text class='vote-class'>{{item.author}}</text>
+      <view style='float:right; margin-right:10rpx; width:42px;'>
+        <image class='vote-view' src="/images/views.svg"></image>
+        <text class='vote-number'>{{item.views}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+   
+</view>

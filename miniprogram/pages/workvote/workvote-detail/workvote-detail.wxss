@@ -1,0 +1,73 @@
+/* pages/workvote/workvote-detail/workvote-detail.wxss */
+
+.vote-total {
+  width: 686rpx;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.vote-content {
+  /* display: flex; */
+  float: left;
+  margin-top:20rpx; 
+  margin-left:26rpx;
+  width: 330rpx;
+  height: 430rpx;
+  background: #fff;
+  /* flex-direction: column; */
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.vote-content:nth-child(2n+1) {
+  margin-left: 0;
+}
+.vote-image {
+  width: 330rpx;
+  height: 318rpx;
+}
+
+.vote-title {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #333;
+  letter-spacing: 0.17px;
+  margin-top: 10px;
+  margin-left: 10rpx;
+}
+
+.vote-huohua {
+  width: 20rpx;
+  height: 24rpx;
+}
+
+.vote-class {
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #999;
+  letter-spacing: 0.12px;
+  margin-left: 10rpx;
+}
+
+.vote-view {
+  width: 30rpx;
+  height: 20rpx;
+  display: block;
+  float: left;
+  margin-top: 23rpx;
+ 
+}
+.vote-sum{
+  margin-top: -9rpx;
+}
+
+.vote-number {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 0.12px;
+  text-align: center;
+  margin-left:10rpx;
+  width: 10rpx;
+
+ 
+}

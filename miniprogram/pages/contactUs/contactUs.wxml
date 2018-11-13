@@ -1,0 +1,32 @@
+<view class='us-container'>
+  <image class='us-image' src="{{cover}}"></image>
+
+  <text class='us-name'>{{title}}</text>
+  <view class='us-introduce'>
+    <text >{{introduction}}</text>
+  </view>
+
+  <view class='us-group'>
+    <text class='us-auth'>地址: </text>
+    <text class='us-auth-content'>{{address}}</text>
+  </view>
+  <view class='us-group-one' >
+    <text class='us-phone'>联系热线: </text>
+    <text class='us-phone-content'>{{phone}}</text>
+    <image class='us-phone-log'  bindtap="phone" src='/images/phone.png'></image>
+  </view>
+  <!-- <button bindtap="phone" >测试</button> -->
+</view>
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">微信授权</view>
+  <view class="modal-content">
+    <text>需要获取以下信息:\n</text>
+    <text>你的公开信息(头像,昵称等)</text>
+  </view>
+  <view class="modal-footer">
+    <button bindtap="cancel" class='btn-cancel'>拒绝</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='btn-confirm'>确定</button>
+  </view>
+</view>

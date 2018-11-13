@@ -2,19 +2,41 @@
   "cloud": true,
   "pages": [
     "pages/consultation/consultation",
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/workvote/workvote-vote/workvote-vote",
+    "pages/contactUs/contactUs", 
+    "pages/workvote/workvote-item/workvote-item",
+    "pages/workvote/workvote-detail/workvote-detail",
+    "pages/workvote/workvote",
+    "pages/consultation/consultation-detail/consultation-detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#A2A6A6",
+    "selectedColor":"#333333",
+    "list":[
+      {
+        "pagePath": "pages/consultation/consultation",
+        "text": "实时资讯",
+        "iconPath": "/images/tab-shi-1.png",
+        "selectedIconPath": "/images/tab-shi.png"
+      },
+      {
+        "pagePath": "pages/workvote/workvote",
+        "text": "作品投票",
+        "iconPath": "/images/tab-vote-1.png",
+        "selectedIconPath": "/images/tab-vote.png"
+      },
+      {
+        "pagePath": "pages/contactUs/contactUs",
+        "text": "联系我们",
+        "iconPath": "/images/plog-one.png",
+        "selectedIconPath": "/images/plog.png"
+      }
+    ]
   }
 }

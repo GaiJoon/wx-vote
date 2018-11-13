@@ -1,0 +1,25 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="con-det-total">
+    <view>
+    <image class='con-det-bgimg' src='{{cover}}'></image>
+    </view>
+    <view>
+        <view class='con-det-ti-fo'>
+        <text class='con-det-title'>{{title}}</text>
+        <button class='con-det-btn' open-type='share'>
+        <image class='con-det-forward'  src='/images/Group-share.png'></image>
+        </button>
+        </view>
+        <view class='con-det-ti-group'>
+          <text class='con-det-name' >{{author}}</text>
+          <image class="con-det-browseImg" src='/images/views.svg'></image>
+          <text class='con-det-browse'  >{{views}}</text>
+          <text class='con-det-data' >{{created_at}}</text>
+        </view>
+    </view>
+    <view>
+      <!-- {{content}} -->
+      <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+</view>

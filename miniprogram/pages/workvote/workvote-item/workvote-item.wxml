@@ -1,0 +1,24 @@
+<view class='item-container'>
+  <block wx:for="{{entities}}" wx:for-index="id">
+    <view class='item-item'>
+      <image class='item-image' src='{{item.cover}}'></image>
+      <view class='item-group-two'>
+        <text class='item-name'>{{item.author}}</text>
+        <view class='item-group'>
+          <image wx:if="{{id == 0}}"class='item-log' src='/images/goldmedal.svg'></image>
+          <image wx:elif="{{id == 1}}" class='item-log1' src='/images/silvermedal.svg'></image>
+          <image wx:elif="{{id == 2}}" class='item-log2' src='/images/bronzemedal.svg'></image>
+          <text class='item-ticket'>{{item.votes}}票</text>
+          <text class='item-percentage'>{{item.votes / sum *100 |Int}}%</text>
+        </view>
+        <view class='item-group-one'>
+          <text class='item-title'>{{item.title}}</text>
+          <text class='item-slogan'wx:if="{{remarks[id]}}">{{remarks[id]}}</text>
+          <text class='item-slogan'wx:else> 你还有希望 </text>
+        </view>
+        <progress class='item-progressBar' percent='{{item.votes / sum *100 |Int}}' activeColor='#FFB95C' style='2'></progress>
+      </view>
+    </view>
+    <view class='item-line'></view>
+  </block>
+</view>

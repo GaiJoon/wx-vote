@@ -1,0 +1,48 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='vo-container'>
+  <view>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+  </view>
+  <view>
+    <text class='vo-title'>作品名称</text>
+    <text class='vo-title-detail'>{{title}}</text>
+  </view>
+  <view>
+    <text class='vo-introduce'>作品简介</text>
+
+    <text class='vo-introduce-detail'>{{introduction}}</text>
+
+  </view>
+  <view class="divLine"></view>
+  <text class='vo-group'>组内成员</text>
+  <view class='vo-groups'>
+    <block wx:for="{{members}}">
+      <view class='vo-ren'>
+        <image class='vo-member-img' src='http://p6uzoacuu.bkt.clouddn.com/{{item[1]}}'></image>
+        <text class='vo-member-name'>{{item[0]}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='vo-vf'>
+    <view class='vo-vote' wx:if="{{collected == 'true'}}" catchtap="voteTap" data-Id='{{id}}'>为他投票</view>
+    <view class='vo-votes' wx:elif="{{collected == '305'}}" catchtap="voteItem" data-groupid='{{group_id}}'>已截止 (查看结果)</view>
+    <view class='vo-votes' wx:else catchtap="voteItem" data-groupid='{{group_id}}'>已投票 (查看结果)</view>
+    <button open-type="share" class='vo-forwords'>
+      <image class='vo-forword' src='/images/zhuanfa.png'></image>
+    </button>
+  </view>
+</view>
+
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">微信授权</view>
+  <view class="modal-content">
+    <text>需要获取以下信息:\n</text>
+    <text>你的公开信息(头像,昵称等)</text>
+  </view>
+  <view class="modal-footer">
+    <button bindtap="cancel" class='btn-cancel'>拒绝</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='btn-confirm'>确定</button>
+  </view>
+</view>

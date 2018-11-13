@@ -1,0 +1,121 @@
+button::after {
+  border: none;
+}
+button {
+  background-color: transparent;
+}
+.con-det-total {
+  display: flex;
+  flex-direction: column;
+}
+
+.con-det-bgimg {
+  width: 750rpx;
+  height: 472rpx;
+}
+
+.con-det-ti-fo {
+  /* display: flex; */
+}
+
+.con-det-title {
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #333;
+  letter-spacing: 0.2rpx;
+  text-align: center;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+
+.con-det-name {
+  margin-left: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+  text-align: center;
+}
+
+.con-det-browseImg {
+  width: 30rpx;
+  height: 20rpx;
+  /* background: #A2A6A6; */
+  margin-left: 40rpx;
+}
+
+.con-det-browse {
+  /* background: #A2A6A6; */
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+  text-align: center;
+}
+
+.con-det-data {
+  font-family: PingFangSC-Regular;
+  font-size: 12rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+  text-align: center;
+  float: right;
+  margin-right: 40rpx;
+}
+.con-det-content{
+  background: #FFFFFF;
+
+}
+.con-det-btn{
+  float:right;
+  width:40rpx;
+  line-height:1;
+  background-color:transparent;
+  padding:0;
+  margin-right: 40rpx;
+  margin-top: 10rpx;
+}
+.con-det-forward {
+  width: 40rpx;
+  height: 36rpx;
+}
+.con-det-ti-group {
+  margin-top: 8px;
+}
+.con-det-ti-group text,
+.con-det-ti-group image {
+  display: block;
+  float: left;
+  margin-bottom: 10rpx;
+}
+.con-det-ti-group .con-det-name {
+  margin-left: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+}
+
+.con-det-ti-group .con-det-browseImg {
+  width: 30rpx;
+  margin-left: 40rpx;
+  margin-top:7rpx;
+}
+
+.con-det-ti-group .con-det-browse {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+  margin-left: 8rpx;
+}
+
+.con-det-ti-group .con-det-data {
+  float: right;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999;
+  letter-spacing: 0.14rpx;
+  text-align: center;
+  margin-right: 40rpx;
+}

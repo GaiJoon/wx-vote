@@ -1,1 +1,80 @@
 /* pages/consultation/consultation.wxss */
+
+.con-content {
+  display: flex;
+  width: 686rpx;
+  height: 452rpx;
+  margin: 0 auto;
+  border-radius: 6px;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.con-image {
+  width: 686rpx;
+  height: 352rpx;
+}
+
+.con-title {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 0.17px;
+  /* text-align: center; *//* font-weight: bold; */
+  float: left;
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+}
+
+.con-name {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #999;
+  letter-spacing: 0.12px;
+  text-align: center;
+  margin-left: 20rpx;
+  margin-top: 6rpx;
+  /* float: left; */
+}
+
+.con-view {
+  margin-top: 22rpx;
+  margin-right: 10rpx;
+  width: 30rpx;
+  height: 20rpx;
+  display: block;
+  float: left;
+}
+
+.con-view-n {
+  float: right;
+  margin-right: 20rpx;
+}
+
+.con-three {
+  margin-top: -6px;
+}
+
+.con-num {
+  margin-top: 18rpx;
+  font-family:PingFangSC-Regular;
+  font-size:10px;
+  color:#999;
+  letter-spacing:0.12px;
+  width:46rpx;
+  display:block;
+  float:left;
+}
+
+.shi {
+  height: 10px;
+  width: 100%;
+  /* background-color:antiquewhite; *//* float: top; */
+}
+
+.show-btn {
+  margin-top: 100rpx;
+  color: #2c2;
+}
+

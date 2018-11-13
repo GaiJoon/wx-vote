@@ -1,2 +1,29 @@
-<!--pages/consultation/consultation.wxml-->
-<text>pages/consultation/consultation.wxml</text>
+<view class='con-zong'>
+  <block wx:for="{{entities}}">
+    <view class='shi'></view>
+    <view class='con-content' catchtap="details" data-Id="{{item.id}}">
+      <image class="con-image" src='{{item.cover}}'></image>
+      <text class="con-title">{{item.title}}</text>
+      <view class="con-three">
+        <text class='con-name'>{{item.author}}</text>
+        <view class='con-view-n'>
+          <image class='con-view' src='/images/views.svg'></image>
+          <text class='con-num'>{{item.views}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">微信授权</view>
+  <view class="modal-content">
+    <text>需要获取以下信息:\n</text>
+    <text>你的公开信息(头像,昵称等)</text>
+  </view>
+  <view class="modal-footer">
+    <button bindtap="cancel" class='btn-cancel'>拒绝</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='btn-confirm'>确定</button>
+  </view>
+</view>
